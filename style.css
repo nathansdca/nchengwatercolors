@@ -1,0 +1,318 @@
+/* dark
+Brunswick Green: 344e41
+Hunter Green: 3a5a40
+Fern Green: 588157
+Asparagus: 87ae77
+Laurel Green: b2c89c
+Pastel Gray: cad7b9
+White Coffee: e2e4d7
+light */
+
+
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	background-color: #b2c89c;
+	color: #000;
+}
+
+:active, :focus {
+	outline-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	text-align: center;
+}
+
+h1 {
+	font-size: 200%;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+.nav-item {
+	background-color: #e2e4d7;
+}
+
+.nav-link {
+    color: #000;
+    text-align: center;
+}
+
+#ncheng {
+    font-size: 300%;
+    font-family: 'Tangerine', cursive;
+    justify-content: center;
+    letter-spacing: 0.25em;
+}
+
+#circular {
+    border-radius: 50%;
+}
+
+.row {
+    background-color: #DCEDC8;
+}
+
+.text {
+    padding-left: 1rem;
+    padding-top: 4rem;
+}
+
+#waterfall {
+    width: auto;
+}
+
+i {
+    padding-right: 0.5em;
+}
+
+#transparent {
+	background-color: transparent;
+}
+
+.card {
+	background-color: #cad7b9;
+}
+
+#products ul {
+	margin: 1.5em 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+#products li {
+	float: left;
+	width: 31%;
+	margin: 0 1%;
+	display: block;
+}
+
+.product-description {
+	padding: 1em;
+}
+
+.product-name {
+	text-align: center;
+	margin: 0;
+	padding-bottom: 0.2em;
+	border-bottom: 2px solid #000;
+	text-transform: uppercase;
+}
+
+.product-price {
+	text-align: center;
+	margin: 1em auto;
+}
+
+form.add-to-cart div,
+form.add-to-cart p {
+	text-align: center;
+}
+
+form input.qty {
+	width: 40px;
+	border: 2px solid #3a5a40;
+	color: #000;
+	border-radius: 4px;
+	margin-left: 0.4em;
+}
+
+.btn, a.btn {
+	display: inline-block;
+	background: #344e41;
+	color: #fff;
+	padding: 0.3em 1em;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid #588157;
+}
+
+#shopping-cart {
+	margin: 1.5em 0;
+}
+
+.shopping-cart {
+	border: 2px solid #3a5a40;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.shopping-cart th {
+	font-size: 1.3em;
+	padding: 0.3em;
+	width: 33.3%;
+	border: 2px solid #3a5a40;
+	text-transform: uppercase;
+}
+
+.shopping-cart td {
+	padding: 0.3em;
+	width: 33.3%;
+	border: 2px solid #3a5a40;
+}
+
+.shopping-cart tr:nth-child(even) {
+	background: #e2e4d7;
+}
+
+.shopping-cart td.pdelete {
+	text-align: center;
+}
+
+.pdelete a,
+.pdelete a:hover {
+	color: #c00;
+	text-decoration: none;
+	font-size: 2.5em;
+	display: block;
+	text-align: center;
+}
+
+#shopping-cart-actions {
+	margin: 1.5em 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#shopping-cart-actions li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+#pricing {
+	padding: 0.5em;
+	margin: 1em 0;
+}
+
+#sub-total, #shipping {
+	margin: 1.5em 0;
+	text-align: right;
+}
+
+#sub-total span,
+#shipping span {
+	margin-left: 1em;
+}
+
+#content > h1,
+#checkout-order-form h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#pricing #sub-total,
+#pricing #shipping {
+	margin: 1em 0;
+}
+
+#checkout-order-form {
+	margin: 1.5em 0;
+}
+
+#checkout-order-form fieldset {
+	border: 2px solid #3a5a40;
+	padding: 1em;
+	margin-bottom: 1.3em;
+}
+
+#checkout-order-form legend {
+	padding: 0.3em;
+	background: #e2e4d7;
+	font-weight: bold;
+}
+
+#checkout-order-form div {
+	margin-bottom: 1em;
+}
+
+#checkout-order-form label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.3em;
+	text-align: left;
+}
+
+#checkout-order-form input[type="text"] {
+	width: 200px;
+	display: block;
+	background: #fff;
+	border: 2px solid #3a5a40;
+	padding: 0.3em;
+}
+
+#checkout-order-form select {
+	width: 200px;
+	display: block;
+}
+
+.message {
+	display: block;
+	margin: 0.5em 0;
+	color: red;
+}
+
+#user-details {
+	margin: 1.5em 0;
+}
+
+#user-details > h2 {
+	text-align: center;
+	font-size: 2em;
+}
+
+#user-details-content {
+	margin: 1.5em 0;
+	padding: 1em;
+	border: 2px solid #3a5a40;
+	overflow: hidden;
+}
+
+#user-details-content .detail {
+	float: left;
+	width: 46%;
+}
+
+#user-details-content .detail.right {
+	float: right;
+}
+
+#user-details-content .detail > h2 {
+	text-align: center;
+	font-size: 1.6em;
+	margin-bottom: 0.5em;
+}
+
+#user-details-content ul {
+	margin: 0 0 1em 0;
+	padding: 0;
+	list-style: none;
+}
+
+#user-details-content li {
+	display: block;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #ddd;
+}
+
+#paypal-form {
+	margin: 1.5em 0;
+}
+
+a[data-fancybox] img {
+	cursor: zoom-in;
+  }

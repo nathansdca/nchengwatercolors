@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/jquery.shop.js"></script>
+
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!--<link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">-->
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+	<!--Fontawesome Icons-->
+	<script src="https://kit.fontawesome.com/f8fd2d4efb.js" crossorigin="anonymous"></script>
+
+	<!--My CSS Styles-->
+	<title>Nancy Cheng Watercolors</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<!--Somehow insert the flower border image across top-->
+		<div class="card" style="width: auto;">
+			<img src="images/bar.jpg" class="card-img-top" alt="flower border across top">
+		</div>
+
+		<!--Hold mottled green background and "Nancy Cheng Watercolors"-->
+		<header>
+			<div class="card" style="border: none;">
+				<img src="images/background-crop.jpg" class="card-img" alt="mottled green background">
+				<div class="d-flex justify-content-center align-items-center card-img-overlay">
+					<h1 class="card-title" id="ncheng">Nancy Cheng Watercolors</h1>
+				</div>
+			</div>
+		</header>
+
+		<!--Navbar that will hold the 5 nav links-->
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+			</li>
+			<!-- <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+					aria-expanded="false">Gallery</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Classical</a></li>
+					<li><a class="dropdown-item" href="#">Country</a></li>
+					<li><a class="dropdown-item" href="#">Floral</a></li>
+					<li><a class="dropdown-item" href="#">Tropical</a></li>
+				</ul>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" href="gallery.html">Gallery</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="cart.html">Cart</a>
+			</li>
+		</ul>
+
+		<div class="row">
+			<div class="card">
+				<div class="row card-body">
+					<div class="col-md-6">
+						<div class="text">
+							<h2 class="card-title">Fine art portfolio of San Diego-based artist Nancy Cheng</h2>
+							<p class="card-text">All works on this website are for sale</p>
+						</div>
+					</div>
+					<img class="col-md-6" id="circular" src="images/me.jpg" alt="image of Nancy Cheng" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="card">
+				<div class="row card-body">
+					<div class="col-md-6">
+						<h1>What is a Giclée?</h1>
+						<p>A giclée (pronounced "zhee-clay," French "to spray") is a museum quality fine art print. The
+							giclée process allows for the portrayal of the finest detail and vibrancy of the artist's
+							original image. These limited edition prints are signed and numbered by the artist, and
+							include a certificate of authenticity.</p>
+
+						<p>Each giclée is printed on an IRIS printer, which delivers a fine spray of ink onto a sheet of
+							heavyweight, acid free watercolor paper. The inks are formulated from four extremely light
+							fast dyes, which yield a lifespan of greater than 70 years before noticeable fading occurs.
+						</p>
+					</div>
+					<img class="col-md-6" id="waterfall" src="images/WaterfallOval.jpg" alt="Waterfall" />
+				</div>
+			</div>
+		</div>
+
+		<div id="site">
+			<div id="content">
+				<div id="products">
+					<div class="row">
+						<h1>Bestsellers</h1>
+						<div class="col-md-4">
+							<div class="card">
+								<img src="images/classical/AfternoonAtThePrado.jpg" alt="Afternoon At The Prado">
+
+								<div class="product-description" data-name="Afternoon At The Prado" data-price="300">
+									<h3 class="product-name">Afternoon At The Prado</h3>
+									<p class="product-price">$300</p>
+									<form class="add-to-cart" action="cart.html" method="post">
+										<div>
+											<label for="qty-1">Quantity</label>
+											<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+										</div>
+										<p><input type="submit" value="Add To Cart" class="btn" /></p>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<img src="images/country/RipenedGrapes.jpg" alt="Ripened Grapes">
+
+								<div class="product-description" data-name="Ripened Grapes" data-price="300">
+									<h3 class="product-name">Ripened Grapes</h3>
+									<p class="product-price">$300</p>
+									<form class="add-to-cart" action="cart.html" method="post">
+										<div>
+											<label for="qty-2">Quantity</label>
+											<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+										</div>
+										<p><input type="submit" value="Add To Cart" class="btn" /></p>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<img src="images/tropical/APerfectDay.jpg" alt="A Perfect Day">
+
+								<div class="product-description" data-name="A Perfect Day" data-price="200">
+									<h3 class="product-name">A Perfect Day</h3>
+									<p class="product-price">$200</p>
+									<form class="add-to-cart" action="cart.html" method="post">
+										<div>
+											<label for="qty-3">Quantity</label>
+											<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+										</div>
+										<p><input type="submit" value="Add To Cart" class="btn" /></p>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<h2><a class="nav-link" href="gallery.html">Browse the full gallery <i class="fas fa-long-arrow-alt-right"></i></a></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<div class="card">
+			<img class="card-img w-100" src="images/background-crop.jpg" alt="mottled green background">
+			<div class="d-flex card-img-overlay justify-content-center">
+				<div class="row" id="transparent">
+					<div class="col">
+						<h6><b>Contact Information</b></h6>
+						<p><i class="fas fa-envelope"></i>ncheng@nancycheng.com</p>
+						<p><i class="fas fa-phone-alt"></i>858-484-0226</p>
+					</div>
+					<div class="col">
+						<h6><b>Join Email List</b></h6>
+						<label for="email">Email: </label>
+						<input type="email" id="email" name="email" maxlength="30" placeholder="example@gmail.com"
+							required>
+					</div>
+					<div class="col">
+						<h6><b><i class="far fa-copyright"></i>Nancy Cheng Watercolors, 2021</b></h6>
+						<p>All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
